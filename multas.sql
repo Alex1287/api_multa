@@ -1,1 +1,0 @@
-SELECT * FROM apimult_as.credenciales;
