@@ -64,7 +64,7 @@ connection.query(sql, (err, result) => {
 };
 
 
-credencialesModel.deletecredenciales = (id, callback)=>{
+credencialesModel.deleteCredenciales = (id, callback)=>{
   if (connection) {
     let sql = `SELECT * FROM credenciales WHERE id = ${connection.escape(id)}`;
     connection.query(sql, (err, row)=> {
