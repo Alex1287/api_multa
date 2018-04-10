@@ -2,7 +2,7 @@ const Observaciones = require('../models/observaciones');
 module.exports = function (app) {
   app.get('/observaciones', (req, res) => {
     //res.json([]);
-    Observacioens.getObservaciones((err, data) => {
+    Observaciones.getObservaciones((err, data) => {
       res.status(200).json(data);
     });
   });
